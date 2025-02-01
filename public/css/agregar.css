@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* Fondo suave */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor de regreso */
+.regresar {
+    cursor: pointer;
+    color: #007bff; /* Color azul */
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin: 50px auto; /* Centrar el formulario en la página */
+}
+
+/* Estilo para los campos de entrada */
+.inputD {
+    margin-bottom: 15px; /* Espaciado entre campos */
+}
+
+label {
+    display: block; /* Hacer que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espaciado debajo de la etiqueta */
+    color: #333; /* Color de texto oscuro */
+    font-weight: bold; /* Negrita */
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #007bff; /* Color de fondo azul */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    color: white; /* Color del texto del botón */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+    width: 100%; /* Ancho completo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+    .formulario {
+        padding: 15px; /* Menos espaciado interno en pantallas pequeñas */
+        margin: 20px; /* Menos margen en pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px; /* Menos espaciado interno en el botón */
+    }
+}

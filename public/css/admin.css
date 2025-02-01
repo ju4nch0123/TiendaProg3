@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* Fondo suave */
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para la fila de encabezado */
+.row {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+    background-color: #343a40; /* Fondo oscuro */
+    padding: 15px; /* Espaciado interno */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para el título */
+.title {
+    margin: 0; /* Sin margen */
+    font-size: 24px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de regresar */
+.boton {
+    color: #007bff; /* Color azul */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+
+/* Estilo para la tabla */
+.table-container {
+    margin-top: 20px; /* Espaciado superior */
+    overflow-x: auto; /* Permitir desplazamiento horizontal en pantallas pequeñas */
+}
+
+.table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+}
+
+.table th, .table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.table th {
+    background-color: #343a40; /* Fondo oscuro para encabezados */
+    color: white; /* Color del texto */
+}
+
+.table-striped tbody tr {
+    background-color: #495057; /* Color de fondo para filas impares */
+}
+
+.table-dark {
+    color: white; /* Color del texto en la tabla */
+}
+
+/* Estilo para las imágenes de la tabla */
+.imgtable {
+    width: 20px; /* Ancho de las imágenes */
+    height: 20px; /* Alto de las imágenes */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 8px; /* Menos espaciado interno en pantallas pequeñas */
+    }
+
+    .title {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .imgtable {
+        width: 16px; /* Ancho de las imágenes más pequeño */
+        height: 16px; /* Alto de las imágenes más pequeño */
+    }
+}
